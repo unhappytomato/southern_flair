@@ -1,0 +1,61 @@
+
+/* fancy font */
+
+@font-face  {
+    font-family: DancingScript-Bold 
+    src: url("DancingScript-Bold.ttf");
+}
+
+h1  {
+    color: whitesmoke;
+    font-family: DancingScript-Bold;
+    font-size: 300%;
+}
+
+h3  {
+    font-family: DancingScript-Bold;
+}
+
+/* Jumbotron Image */
+
+.jumbotron  {
+    background-image: url('images/plaid.png');
+    background-size: cover;
+    border-radius: 0;
+}
+
+/* /Jumbotron Image */
+
+/* Navbar Styles */
+
+.navbar {
+    
+}
+
+.bg    {
+    background-color: black;
+    text: white;
+}
+
+/* /Navbar Styles */
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 769px)
+
+    .navbar,
+    .jumbotron,
+    .row    {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+@media (min-width: 1025px)
+
+    .navbar,
+    .jumbotron,
+    .row    {
+        width: 80%;
+        max-width: 1150px;
+    }

@@ -1,0 +1,23 @@
+
+/* fancy font */
+
+@font-face  {
+    font-family: DancingScript-Bold; src: url("DancingScript-Bold.ttf");
+}
+
+h1  {
+    color: whitesmoke;
+    font-family: DancingScript-Bold;
+    font-size: 300%;
+}
+
+h3  {
+    font-family: DancingScript-Bold;
+    font-size:  
+}
+
+
+/* TAB STYLES FOR sf_index */
+
+
+/* MEDIA QUERIES */

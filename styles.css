@@ -6,67 +6,141 @@
     src: url("DancingScript-Bold.ttf");
 }
 
-h1  {
-    color: whitesmoke;
-    font-family: DancingScript-Bold;
-    font-size: 300%;
+h1 {
+  text-align: center;
+  color: whitesmoke;
+  font-family: DancingScript-Bold;
+}
+
+h2  {
+  text-align: center;
+  color: whitesmoke;
+  font-family: DancingScript-Bold;
 }
 
 h3  {
-    font-family: DancingScript-Bold;
+  text-align: center;
+  color: black;
+  font-family: DancingScript-Bold;
 }
 
-/* Jumbotron Image */
-
-.jumbotron  {
-    background-image: url('img/plaid.png');
-    background-size: cover;
-    border-radius: 0;
+header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 200px;
+  background-image: url(img/plaid2.jpg);
+  background-repeat: repeat-x;
 }
 
-/* /Jumbotron Image */
-
-/* Navbar Styles */
-
-.navbar {
-    
+header div {
+  height: 50%;
 }
 
-.bg    {
-    background-color: black;
-    text: white;
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: antiquewhite;
 }
 
-/* /Navbar Styles */
+.row {
+  display: flex;
+  background: grey;
+  height: 300px;
+  width: 100%;
+}
 
-/* Card Styles */
+.row:nth-of-type(2) {
+  margin: 1em 0;
+}
 
-.card   {
-    margin: 0 auto;
-    float: none;
-    margin-bottom: 10px;
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  flex: 1 0 250px;
+  margin: 1em 0;
+  border: 1px solid black;
+}
+
+.brandi-photo, .food-photo {
+  flex: 2 0 250px;
+}
+
+/* Crazy Fun Gradients */
+.brandi-photo {
+background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+background-image: url("img/brandi.jpg");
+background-size: cover;
+background-position: center;
+}
+
+.food-photo {
+background: -moz-linear-gradient(right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+background: -webkit-linear-gradient(right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+background: linear-gradient(to left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+}
+
+.contact input, textarea {
+  margin: 4px;
+  width: 100%;
+  border: 1px solid grey;
+  padding: 1em;
+}
+
+.contact input {
+  height: 20px;
+}
+
+.contact textarea {
+  height: 60px;
+}
+
+button {
+  width: 33%;
+  height: 40px;
+  border: none;
+  background: red;
+  color: white;
 }
 
 
-/* /Card Styles */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background: lightblue;
+  padding: 1em 0;
+}
+
+.social-container {
+  display: flex;
+}
+
+.social {
+  border-radius: 50%;
+  background: grey;
+  width: 50px;
+  height: 50px;
+  margin: 1em;
+}
 
 
 /* MEDIA QUERIES */
-
-@media (min-width: 769px)
-
-    .navbar,
-    .jumbotron,
-    .row    {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-@media (min-width: 1025px)
-
-    .navbar,
-    .jumbotron,
-    .row    {
-        width: 80%;
-        max-width: 1150px;
-    }

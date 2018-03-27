@@ -42,7 +42,7 @@ header div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: antiquewhite;
+  background: black;
 }
 
 .row {
@@ -79,7 +79,6 @@ background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0)
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
 background-image: url("img/brandi.jpg");
 background-size: cover;
-background-position: center;
 }
 
 .food-photo {
@@ -87,6 +86,9 @@ background: -moz-linear-gradient(right, rgba(255,255,255,1) 0%, rgba(255,255,255
 background: -webkit-linear-gradient(right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
 background: linear-gradient(to left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+background-image: url("img/cake.jpg");
+background-size: cover;
+background-position: center;
 }
 
 /* Contact Form Styles */
@@ -123,11 +125,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 .magic-button {
-  /* width: 33%;
+  width: 33%;
   height: 40px;
-  border: none;
+  border: black;
   background: red;
-  color: white; */
+  color: white;
 }
 
 
@@ -137,7 +139,7 @@ footer {
   justify-content: center;
   align-items: center;
   height: 100px;
-  background: lightblue;
+  background: red;
   padding: 1em 0;
 }
 

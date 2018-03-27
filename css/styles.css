@@ -1,0 +1,162 @@
+
+/* fancy font */
+
+@font-face  {
+    font-family: DancingScript-Bold;
+    src: url("../DancingScript-Bold.ttf");
+}
+
+/* h styles */
+
+h1 {
+  text-align: center;
+  color: whitesmoke;
+  font-family: DancingScript-Bold;
+}
+
+h2  {
+  text-align: center;
+  color: whitesmoke;
+  font-family: DancingScript-Bold;
+}
+
+h3  {
+  text-align: center;
+  color: black;
+  font-family: DancingScript-Bold;
+}
+
+
+header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 200px;
+  background-image: url("../img/plaid2.jpg");
+  background-repeat: repeat-x;
+}
+
+header div {
+  height: 50%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+.row {
+  display: flex;
+  background: grey;
+  height: 300px;
+  width: 100%;
+}
+
+.row:nth-of-type(2) {
+  margin: 1em 0;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  flex: 1 0 250px;
+  margin: 1em 0;
+  border: 1px solid black;
+}
+
+.brandi-photo, .food-photo {
+  flex: 2 0 250px;
+}
+
+/* Crazy Fun Gradients */
+.brandi-photo {
+background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+background-image: url("../img/brandi.jpg");
+background-size: cover;
+}
+
+.food-photo {
+background: -moz-linear-gradient(right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+background: -webkit-linear-gradient(right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+background: linear-gradient(to left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+background-image: url("../img/cake.jpg");
+background-size: cover;
+background-position: center;
+}
+
+/* Contact Form Styles */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+}
+
+.contact input, textarea {
+  margin: 4px;
+  width: 100%;
+  border: 1px solid grey;
+  padding: 1em;
+}
+
+.contact input {
+  height: 20px;
+}
+
+.contact textarea {
+  height: 60px;
+}
+
+/* JS Show/Hide Function */
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.magic-button {
+  width: 33%;
+  height: 40px;
+  border: black;
+  background: red;
+  color: white;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background: red;
+  padding: 1em 0;
+}
+
+.social-container {
+  display: flex;
+}
+
+.social {
+  border-radius: 50%;
+  background: grey;
+  width: 50px;
+  height: 50px;
+  margin: 1em;
+}
+
+
+/* MEDIA QUERIES */
